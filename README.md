@@ -19,20 +19,20 @@ Du kan se hva slags ferdigheter botten her med å kjøre `hubot help` i terminal
     hubot animate me <query> - The same thing as `image me`, except adds [snip]
     hubot help - Displays all of the help commands that hubot knows about.
    
-    ...
+    
 For å snakke med huboten i terminalen
   
     hubot> hubot hei
     
-# Om Hdubot
+# Om Hubot
 
 Hubot er en chatbot bygd på [Hubot][hubot]-rammeverket.
 
 Mer info om Hubot og oppsett på
 
-[hubot]: http://hubot.github.com
-[generator-hubot]: https://github.com/github/generator-hubot
-[heroku]: http://www.heroku.com
+- [hubot](http://hubot.github.com)
+- [generator-hubot](https://github.com/github/generator-hubot)
+- [heroku](http://www.heroku.com)
 
 
 
