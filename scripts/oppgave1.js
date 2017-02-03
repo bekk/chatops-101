@@ -8,14 +8,14 @@
 
 module.exports = function (robot) {
     robot.respond(/hello/, function(res){
-      /* Denne funksjonen vil bli kalt hver gang du snakker direkte med botten
-         dette gjør du med den @bottnavn */
+      /* Denne respond-funksjonen vil bli kalt hver gang du snakker direkte med botten og bruker ordet hello.
+         Du snakker direkte med botten ved å skrive: @bottnavn _______  */
 
          //code here
     })
 
     robot.hear(/hvem er neste hovedpersonen i skam?/, function(res){
-      /* Denne funksjonen vil bli kalt hver gang noen sier hello i en chat hvor
+      /* Denne hear-funksjonen vil bli kalt hver gang noen sier "hvem er neste hovedpersonen i skam" i en chat hvor
          botten har tilgang */
 
 
