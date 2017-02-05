@@ -1,3 +1,6 @@
+### Presentasjon 
+https://docs.google.com/presentation/d/1vQdtBYriDtbgxDAbU45niT5NZ0rP_R4BBFDCq2vD_YU/edit?usp=sharing
+
 ### Kjøring av hubot
 
 Pass på at du er inne i chatops-for-dummies-mappa
