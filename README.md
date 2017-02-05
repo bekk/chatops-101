@@ -1,7 +1,7 @@
-### Presentasjon 
+## Presentasjon 
 https://docs.google.com/presentation/d/1vQdtBYriDtbgxDAbU45niT5NZ0rP_R4BBFDCq2vD_YU/edit?usp=sharing
 
-### Kjøring av hubot
+## Kjøring av hubot
 
 Pass på at du er inne i chatops-for-dummies-mappa
 
@@ -33,7 +33,7 @@ Bruk følgende kommando i terminalen
     
   
     
-# Om Hubot
+## Om Hubot
 
 Hubot er en chatbot bygd på Hubot-rammeverket.
 
