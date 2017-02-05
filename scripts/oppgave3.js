@@ -7,6 +7,9 @@
 //   hubot hvem har jeg hooket med sist av jentene? - botten svarer et tilfeldig jentenavn
 //   hubot hvem har jeg hooket med sist av ....? - botten svarer en tilfeldig person
 
+// Hint 1: dersom du lurer på hva som er lagret i en variabel kan du skrive den ut med 
+// console.log("tekst", variabel)
+
 const SKAM_KARAKTERER_GUTTER = ["gutt1", "gutt2"]
 const SKAM_KARAKTERER_JENTER = ["jente1", "jente2"]
 
