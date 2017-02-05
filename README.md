@@ -25,7 +25,7 @@ For å snakke med huboten i terminalen
     
 # Om Hubot
 
-Hubot er en chatbot bygd på [Hubot]-rammeverket.
+Hubot er en chatbot bygd på Hubot-rammeverket.
 
 Mer info om Hubot og oppsett på
 
