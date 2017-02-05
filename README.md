@@ -23,6 +23,13 @@ For å snakke med huboten i terminalen
   
     hubot> hubot hei
     
+Kjøre hubotten i Slack
+Bruk følgende kommando i terminalen 
+
+    bin/hubot -a slack
+    
+  
+    
 # Om Hubot
 
 Hubot er en chatbot bygd på Hubot-rammeverket.
