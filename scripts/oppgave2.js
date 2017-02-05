@@ -1,5 +1,5 @@
 // Description:
-//   Velger en tilfeldig SKAM-karakter i listen når du spør hvem du hooket med sist
+//   Velger en tilfeldig SKAM-karakter i listen når du spør hvem har jeg hooket med sist
 //
 // Commands:
 //   hubot hvem har jeg hooket med sist? - botten svarer med en tilfeldig SKAM-karakter
