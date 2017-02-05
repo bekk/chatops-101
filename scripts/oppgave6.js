@@ -4,7 +4,7 @@
 // Commands:
 //   hubot hvor mange dager er det til skam starter? - boten svarer med antall dager
 
-// hint: bruk moment bibloteket her
+// Hint 1: bruk moment-biblioteket her https://momentjs.com/
 
 module.exports = function (robot) {
     robot.respond(/hvor mange dager er det til skam starter?/, function(res){

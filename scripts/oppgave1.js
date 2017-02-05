@@ -1,5 +1,5 @@
 // Description:
-//   Første scriptet ditt for å komme igang
+//   Botten svarer på enkle hilsner og lytter etter spesifikke spørsmål
 //
 // Commands:
 //   hubot hello - boten hilser tilbake
