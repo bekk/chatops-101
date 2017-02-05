@@ -1,10 +1,8 @@
-// Random hvem har du hooket med sist
 // Description:
-//   Bruk SKAM karakterene under å velg en tilfeldig person hver gang botten
-//   svarer brukeren
+//   Velger en tilfeldig SKAM-karakter i listen når du spør hvem du hooket med sist
 //
 // Commands:
-//   hubot hvem har jeg hooket med sist? - boten gir en random person tilbake
+//   hubot hvem har jeg hooket med sist? - botten svarer med en tilfeldig SKAM-karakter
 
 const SKAM_KARAKTERER = ["Navn1", "Navn2"]
 
