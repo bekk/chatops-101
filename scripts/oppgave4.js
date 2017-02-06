@@ -2,7 +2,7 @@
 //   Script for å vise hvordan de ulike karakterne ser ut
 //
 // Commands:
-//   hubot hvordan så egentlig <navn> ut? - botten gir en link til et bilde
+//   hubot hvordan så egentlig <navn> ut - botten gir en link til et bilde
 
 
 // Hint 1: for å hente ut navnet se forrige oppgave
