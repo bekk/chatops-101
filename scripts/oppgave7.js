@@ -32,6 +32,7 @@ module.exports = function (robot) {
 
 // Funksjon for å hente ut kantinematteksten fra html-koden
 // Du trenger å sende inn dagens ukedag som et tall her
+// Hint: Bruk moment
 function hentKantineMatenFraHTML(htmlBody, ukedag = 0) {
 		$ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
 
