@@ -19,9 +19,12 @@ module.exports = function (robot) {
 
     //hent websiden med kantineinfoen
     request(url, function (error, response, htmlBody) {
-      //vi bryr oss bare om htmlBody her
 
-      //code here
+      const ukedag = moment().isoWeekday() - 1;
+      const dagensMiddag = hentKantineMatenFraHTML(htmlBody, ukedag);
+
+      //Send responsen litt fint til Slack
+      res.reply(`Dagens mat:\n \`\`\`${dagensMiddag}\`\`\``)
 
     });
   });
