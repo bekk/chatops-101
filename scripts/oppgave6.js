@@ -4,10 +4,16 @@
 // Commands:
 //   hubot hvor mange dager er det til skam starter - boten svarer med antall dager
 
-// Hint 1: bruk moment-biblioteket her https://momentjs.com/
+const moment = require('moment');
+
 
 module.exports = function (robot) {
   robot.respond(/hvor mange dager er det til skam starter/, function (res) {
-    //code here
+    const now = moment();
+    const seasonStart = moment("2017-05-01");
+
+    const diff = seasonStart.diff(now, "days");
+
+    res.reply(`SKAM starter om ${diff} dager`);
   });
 };
