@@ -3,7 +3,7 @@
 //
 // Commands:
 //   hubot hello - boten hilser tilbake
-//   hvem er den neste hovedpersonen i skam?  - boten svarer
+//   hvem er den neste hovedpersonen i skam  - boten svarer
 
 
 module.exports = function (robot) {
@@ -11,7 +11,7 @@ module.exports = function (robot) {
     res.reply("Hallo tilbake");
   });
 
-  robot.hear(/hvem er neste hovedpersonen i skam?/, function (res) {
+  robot.hear(/hvem er neste hovedpersonen i skam/, function (res) {
     res.send("Det er selvfølgelig Vilde!!!!");
   });
 };
