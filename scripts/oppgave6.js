@@ -9,5 +9,5 @@
 module.exports = function (robot) {
 		robot.respond(/hvor mange dager er det til skam starter?/, function (res) {
 				//code here
-		})
-}
+		});
+};

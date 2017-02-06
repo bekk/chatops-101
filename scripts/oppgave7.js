@@ -24,8 +24,8 @@ module.exports = function (robot) {
 						//code here
 
 				});
-		})
-}
+		});
+};
 
 //Under finner du hjelpefunksjoner du kan bruke
 
@@ -41,15 +41,13 @@ function hentKantineMatenFraHTML(htmlBody, ukedag = 0) {
 		var dagensMat = $(mat.get(ukedag)).text();
 
 		//kantinemat-teksten er ganske rotete, derfor må vi rydde den litt
-		var oppryddetDagensMat = ryddOppKantineMatTeksten(dagensMat);
-		return oppryddetDagensMat
+		return ryddOppKantineMatTeksten(dagensMat);
 }
 
 function ryddOppKantineMatTeksten(tekst) {
 		//regex magi
-		var nyTekst = tekst
+		return tekst
 				.replace(/ +(?= )/g, '')
 				.replace(/^\s*[\r\n]/gm, "\n")
 				.replace(/^ +/gm, '').trim();
-		return nyTekst;
 }

@@ -12,7 +12,7 @@ module.exports = function (robot) {
 				 Du snakker direkte med botten ved å skrive: @bottnavn _______  */
 
 				//code here
-		})
+		});
 
 		robot.hear(/hvem er neste hovedpersonen i skam?/, function (res) {
 				/* Denne hear-funksjonen vil bli kalt hver gang noen sier "hvem er neste hovedpersonen i skam" i en chat hvor
@@ -20,5 +20,5 @@ module.exports = function (robot) {
 
 
 				//code here
-		})
-}
+		});
+};

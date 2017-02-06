@@ -19,5 +19,5 @@ module.exports = function (robot) {
 
 				// code here
 
-		})
-}
+		});
+};
