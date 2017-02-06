@@ -7,7 +7,7 @@
 // Hint 1: bruk moment-biblioteket her https://momentjs.com/
 
 module.exports = function (robot) {
-		robot.respond(/hvor mange dager er det til skam starter?/, function (res) {
-				//code here
-		});
+  robot.respond(/hvor mange dager er det til skam starter?/, function (res) {
+    //code here
+  });
 };

@@ -7,17 +7,17 @@
 //   hubot hvem har jeg hooket med sist av jentene? - botten svarer et tilfeldig jentenavn
 //   hubot hvem har jeg hooket med sist av ....? - botten svarer en tilfeldig person
 
-// Hint 1: dersom du lurer på hva som er lagret i en variabel kan du skrive den ut med 
+// Hint 1: dersom du lurer på hva som er lagret i en variabel kan du skrive den ut med
 // console.log("tekst", variabel)
 
 const SKAM_KARAKTERER_GUTTER = ["gutt1", "gutt2"]
 const SKAM_KARAKTERER_JENTER = ["jente1", "jente2"]
 
 module.exports = function (robot) {
-		robot.respond(/hvem har jeg hooket med sist av (\w+)?/, function (res) {
-				// res.match[1] -- henter ut ordet på plassen til (\w+) i det du skrev til botten
+  robot.respond(/hvem har jeg hooket med sist av (\w+)?/, function (res) {
+    // res.match[1] -- henter ut ordet på plassen til (\w+) i det du skrev til botten
 
-				// code here
+    // code here
 
-		});
+  });
 };
