@@ -5,17 +5,17 @@
 // Commands:
 //   hubot hva er dagens middag på <kantine>
 
-var request = require('request');
-var cheerio = require('cheerio');
-var moment = require('moment');
+const request = require('request');
+const cheerio = require('cheerio');
+const moment = require('moment');
 
 
 const kantineURL = 'https://www.sit.no/middag/';
 
 module.exports = function (robot) {
   robot.respond(/hva er dagens middag på (\w+)/, function (res) {
-    var kantine = res.match[1];
-    var url = kantineURL + kantine;
+    const kantine = res.match[1];
+    const url = kantineURL + kantine;
 
     //hent websiden med kantineinfoen
     request(url, function (error, response, htmlBody) {
@@ -36,9 +36,9 @@ module.exports = function (robot) {
 function hentKantineMatenFraHTML(htmlBody, ukedag = 0) {
   $ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
 
-  var mat = $('.dishes__container .dishes__week .dishes__dishes'); // henter ut maten
+  const mat = $('.dishes__container .dishes__week .dishes__dishes'); // henter ut maten
 
-  var dagensMat = $(mat.get(ukedag)).text();
+  const dagensMat = $(mat.get(ukedag)).text();
 
   //kantinemat-teksten er ganske rotete, derfor må vi rydde den litt
   return ryddOppKantineMatTeksten(dagensMat);
