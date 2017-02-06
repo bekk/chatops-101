@@ -17,7 +17,7 @@ module.exports = function (robot) {
 				var kantine = res.match[1];
 				var url = kantineURL + kantine;
 
-				//hent websiden med kantine infoen
+				//hent websiden med kantineinfoen
 				request(url, function (error, response, htmlBody) {
 						//vi bryr oss bare om htmlBody her
 
@@ -30,16 +30,16 @@ module.exports = function (robot) {
 //Under finner du hjelpefunksjoner du kan bruke
 
 
-// Funksjon for å hente ut kantinemat teksten fra html koden
+// Funksjon for å hente ut kantinematteksten fra html-koden
 // Du trenger å sende inn dagens ukedag som et tall her
 function hentKantineMatenFraHTML(htmlBody, ukedag = 0) {
-		$ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html siden
+		$ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
 
 		var mat = $('.dishes__container .dishes__week .dishes__dishes'); // henter ut maten
 
 		var dagensMat = $(mat.get(ukedag)).text();
 
-		//kantine mat teksten er ganske rotete, derfor må vi rydde den litt
+		//kantinemat-teksten er ganske rotete, derfor må vi rydde den litt
 		var oppryddetDagensMat = ryddOppKantineMatTeksten(dagensMat);
 		return oppryddetDagensMat
 }
