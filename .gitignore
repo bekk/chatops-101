@@ -3,3 +3,7 @@ node_modules
 .hubot_history
 
 *.log
+
+# IDEA
+.idea/
+*.iml
