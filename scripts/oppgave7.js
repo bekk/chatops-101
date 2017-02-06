@@ -13,18 +13,18 @@ var moment = require('moment');
 const kantineURL = 'https://www.sit.no/middag/';
 
 module.exports = function (robot) {
-		robot.respond(/hva er dagens middag på (\w+)/, function (res) {
-				var kantine = res.match[1];
-				var url = kantineURL + kantine;
+  robot.respond(/hva er dagens middag på (\w+)/, function (res) {
+    var kantine = res.match[1];
+    var url = kantineURL + kantine;
 
-				//hent websiden med kantineinfoen
-				request(url, function (error, response, htmlBody) {
-						//vi bryr oss bare om htmlBody her
+    //hent websiden med kantineinfoen
+    request(url, function (error, response, htmlBody) {
+      //vi bryr oss bare om htmlBody her
 
-						//code here
+      //code here
 
-				});
-		});
+    });
+  });
 };
 
 //Under finner du hjelpefunksjoner du kan bruke
@@ -34,20 +34,20 @@ module.exports = function (robot) {
 // Du trenger å sende inn dagens ukedag som et tall her
 // Hint: Bruk moment
 function hentKantineMatenFraHTML(htmlBody, ukedag = 0) {
-		$ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
+  $ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
 
-		var mat = $('.dishes__container .dishes__week .dishes__dishes'); // henter ut maten
+  var mat = $('.dishes__container .dishes__week .dishes__dishes'); // henter ut maten
 
-		var dagensMat = $(mat.get(ukedag)).text();
+  var dagensMat = $(mat.get(ukedag)).text();
 
-		//kantinemat-teksten er ganske rotete, derfor må vi rydde den litt
-		return ryddOppKantineMatTeksten(dagensMat);
+  //kantinemat-teksten er ganske rotete, derfor må vi rydde den litt
+  return ryddOppKantineMatTeksten(dagensMat);
 }
 
 function ryddOppKantineMatTeksten(tekst) {
-		//regex magi
-		return tekst
-				.replace(/ +(?= )/g, '')
-				.replace(/^\s*[\r\n]/gm, "\n")
-				.replace(/^ +/gm, '').trim();
+  //regex magi
+  return tekst
+    .replace(/ +(?= )/g, '')
+    .replace(/^\s*[\r\n]/gm, "\n")
+    .replace(/^ +/gm, '').trim();
 }
