@@ -3,7 +3,7 @@
 //
 // Commands:
 //   hubot hello - boten hilser tilbake
-//   hvem er den neste hovedpersonen i skam?  - boten svarer
+//   hvem er den neste hovedpersonen i skam  - boten svarer
 
 
 module.exports = function (robot) {
@@ -14,7 +14,7 @@ module.exports = function (robot) {
     //code here
   });
 
-  robot.hear(/hvem er neste hovedpersonen i skam?/, function (res) {
+  robot.hear(/hvem er neste hovedpersonen i skam/, function (res) {
     /* Denne hear-funksjonen vil bli kalt hver gang noen sier "hvem er neste hovedpersonen i skam" i en chat hvor
      botten har tilgang */
 
