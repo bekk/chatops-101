@@ -7,19 +7,18 @@
 
 
 module.exports = function (robot) {
-    robot.respond(/hello/, function(res){
-      /* Denne respond-funksjonen vil bli kalt hver gang du snakker direkte med botten og bruker ordet hello.
-         Du snakker direkte med botten ved å skrive: @bottnavn _______  */
+		robot.respond(/hello/, function (res) {
+				/* Denne respond-funksjonen vil bli kalt hver gang du snakker direkte med botten og bruker ordet hello.
+				 Du snakker direkte med botten ved å skrive: @bottnavn _______  */
 
-         //code here
-    })
+				//code here
+		})
 
-    robot.hear(/hvem er neste hovedpersonen i skam?/, function(res){
-      /* Denne hear-funksjonen vil bli kalt hver gang noen sier "hvem er neste hovedpersonen i skam" i en chat hvor
-         botten har tilgang */
+		robot.hear(/hvem er neste hovedpersonen i skam?/, function (res) {
+				/* Denne hear-funksjonen vil bli kalt hver gang noen sier "hvem er neste hovedpersonen i skam" i en chat hvor
+				 botten har tilgang */
 
 
-
-         //code here
-    })
+				//code here
+		})
 }

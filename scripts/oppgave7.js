@@ -13,18 +13,18 @@ var moment = require('moment');
 const kantineURL = 'https://www.sit.no/middag/';
 
 module.exports = function (robot) {
-    robot.respond(/hva er dagens middag på (\w+)/, function(res){
-      var kantine = res.match[1];
-      var url = kantineURL + kantine;
+		robot.respond(/hva er dagens middag på (\w+)/, function (res) {
+				var kantine = res.match[1];
+				var url = kantineURL + kantine;
 
-      //hent websiden med kantine infoen
-      request(url, function(error, response, htmlBody){
-        //vi bryr oss bare om htmlBody her
+				//hent websiden med kantine infoen
+				request(url, function (error, response, htmlBody) {
+						//vi bryr oss bare om htmlBody her
 
-        //code here
+						//code here
 
-      });
-    })
+				});
+		})
 }
 
 //Under finner du hjelpefunksjoner du kan bruke
@@ -32,24 +32,23 @@ module.exports = function (robot) {
 
 // Funksjon for å hente ut kantinemat teksten fra html koden
 // Du trenger å sende inn dagens ukedag som et tall her
-function hentKantineMatenFraHTML(htmlBody, ukedag = 0){
-  $ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html siden
+function hentKantineMatenFraHTML(htmlBody, ukedag = 0) {
+		$ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html siden
 
-  var mat = $('.dishes__container .dishes__week .dishes__dishes'); // henter ut maten
+		var mat = $('.dishes__container .dishes__week .dishes__dishes'); // henter ut maten
 
-  var dagensMat = $(mat.get(ukedag)).text();
+		var dagensMat = $(mat.get(ukedag)).text();
 
-  //kantine mat teksten er ganske rotete, derfor må vi rydde den litt
-  var oppryddetDagensMat = ryddOppKantineMatTeksten(dagensMat);
-  return oppryddetDagensMat
+		//kantine mat teksten er ganske rotete, derfor må vi rydde den litt
+		var oppryddetDagensMat = ryddOppKantineMatTeksten(dagensMat);
+		return oppryddetDagensMat
 }
 
-function ryddOppKantineMatTeksten(tekst){
-  //regex magi
-  var nyTekst = tekst
-    .replace(/ +(?= )/g,'')
-    .replace(/^\s*[\r\n]/gm, "\n")
-    .replace(/^ +/gm, '').
-    trim();
-  return nyTekst;
+function ryddOppKantineMatTeksten(tekst) {
+		//regex magi
+		var nyTekst = tekst
+				.replace(/ +(?= )/g, '')
+				.replace(/^\s*[\r\n]/gm, "\n")
+				.replace(/^ +/gm, '').trim();
+		return nyTekst;
 }

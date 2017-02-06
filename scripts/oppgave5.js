@@ -6,11 +6,11 @@
 
 
 module.exports = function (robot) {
-    robot.respond(/summer ([0-9]+) \+ ([0-9]+)/, function(res){
-      // res.match[1] -- henter ut det første tallet
+		robot.respond(/summer ([0-9]+) \+ ([0-9]+)/, function (res) {
+				// res.match[1] -- henter ut det første tallet
 
-      //code here
+				//code here
 
 
-    })
+		})
 }
