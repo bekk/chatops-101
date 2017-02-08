@@ -5,6 +5,7 @@ https://docs.google.com/presentation/d/1vQdtBYriDtbgxDAbU45niT5NZ0rP_R4BBFDCq2vD
 
 Pass på at du er inne i chatops-for-dummies-mappa
 
+### Kjøre hubotten lokalt 
 Du kan starte boten lokalt ved å gå inn i et vindu i *terminalen* og kjøre følgende kommando 
 
     sh ./bin/hubot
@@ -19,19 +20,17 @@ Hvis botten kjører vil du få følgende output i terminalen:
 Du kan se hva slags ferdigheter botten her med å kjøre `hubot help` i terminalen.
 
     hubot> hubot help
-    hubot animate me <query> - The same thing as `image me`, except adds [snip]
-    hubot help - Displays all of the help commands that hubot knows about.
    
 For å snakke med huboten i terminalen
   
     hubot> hubot hei
     
-Kjøre hubotten i Slack
+### Kjøre hubotten i Slack
 Bruk følgende kommando i terminalen 
 
     bin/hubot -a slack
     
-  
+Du kan da snakke med huboten i slack-kanalen vår  
     
 ## Om Hubot
 
