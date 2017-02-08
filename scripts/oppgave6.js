@@ -4,8 +4,9 @@
 // Commands:
 //   hubot hvor mange dager er det til skam starter - boten svarer med antall dager
 
-const moment = require('moment');
+// Hint 1: bruk moment-biblioteket her https://momentjs.com/. PS: Vi har importert det for deg på neste linje
 
+const moment = require('moment');
 
 module.exports = function (robot) {
   robot.respond(/hvor mange dager er det til skam starter/, function (res) {
