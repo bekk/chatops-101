@@ -14,7 +14,7 @@ const SKAM_KARAKTERER_GUTTER = ["gutt1", "gutt2"];
 const SKAM_KARAKTERER_JENTER = ["jente1", "jente2"];
 
 module.exports = function (robot) {
-  robot.respond(/hvem av (\w+) har jeg hooket med sist /, function (res) {
+  robot.respond(/hvem av (\w+) har jeg hooket med sist/, function (res) {
     // res.match[1] -- henter ut ordet på plassen til (\w+) i det du skrev til botten
 
     // code here
