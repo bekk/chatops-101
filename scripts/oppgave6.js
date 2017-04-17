@@ -1,5 +1,5 @@
 // Description:
-//   Script for å telle ned antall dager siden SKAM sesong 4 startet 
+//   Script for å telle antall dager siden SKAM sesong 4 startet 
 //
 // Commands:
 //   hubot hvor mange dager er det siden skam startet - boten svarer med antall dager
