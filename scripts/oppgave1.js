@@ -3,7 +3,7 @@
 //
 // Commands:
 //   hubot hello - boten hilser tilbake
-//   hvem er den neste hovedpersonen i skam  - boten svarer
+//   hvem er den beste i skam  - boten svarer
 //
 // Hint:
 //   som nevnt i introen så bruker du følgende
@@ -17,7 +17,7 @@ module.exports = function (robot) {
     res.reply("Hallo tilbake");
   });
 
-  robot.hear(/hvem er neste hovedpersonen i skam/, function (res) {
+  robot.hear(/hvem er den beste i skam/, function (res) {
     res.send("Det er selvfølgelig Vilde!!!!");
   });
 };

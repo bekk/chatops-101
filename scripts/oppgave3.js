@@ -1,6 +1,6 @@
 // Description:
-//   Velger en tilfeldig SKAM-karakter i listen av gutte elle jentenavn
-//   når du spør hvem har jeg hooket med sist
+//   Velger en tilfeldig SKAM-karakter fra en liste av gutte eller jentenavn
+//   når du spør "hvem av ... har jeg hooket med sist"
 //
 // Commands:
 //   hubot hvem av guttene har jeg hooket med sist? - botten svarer et tilfeldig guttenavn

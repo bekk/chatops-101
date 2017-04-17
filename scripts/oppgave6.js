@@ -1,20 +1,20 @@
 // Description:
-//   Script for å telle ned antall dager til SKAM sesong 4 start (ca 1.mai)
+//   Script for å telle antall dager siden SKAM sesong 4 startet 
 //
 // Commands:
-//   hubot hvor mange dager er det til skam starter - boten svarer med antall dager
+//   hubot hvor mange dager er det siden skam startet - boten svarer med antall dager
 
 // Hint 1: bruk moment-biblioteket her https://momentjs.com/. PS: Vi har importert det for deg på neste linje
 
 const moment = require('moment');
 
 module.exports = function (robot) {
-  robot.respond(/hvor mange dager er det til skam starter/, function (res) {
+  robot.respond(/hvor mange dager er det siden skam startet/, function (res) {
     const now = moment();
-    const seasonStart = moment("2017-05-01");
+    const seasonStart = moment("2017-04-07");
 
-    const diff = seasonStart.diff(now, "days");
+    const diff = now.diff(seasonStart, "days");
 
-    res.reply(`SKAM starter om ${diff} dager`);
+    res.reply(`SKAM startet for ${diff} dager siden`);
   });
 };
