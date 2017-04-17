@@ -7,6 +7,8 @@
 
 // Hint 1: for å hente ut navnet se forrige oppgave
 
-// Hint 2: Her må du bruke et JavaScript object 
+// Hint 2: Her må du bruke et JavaScript object
 
 // Hint 3: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+
+module.exports = function (robot) {}
