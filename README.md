@@ -2,7 +2,7 @@
   1. Last ned nyeste versjon av node.js (enten ved å bruk brew eller fra https://nodejs.org/en/download/current/)
   2. Lag deg en bruker på Slack-kanalen *bekk-chatops* https://bekk-chatops.slack.com/signup. NB: Her må du bruke din uib-epostadresse
   3. Finn frem en passende editor som kan brukes til javascript, vi anbefaler atom
-  4. Klon dette repoet
+  4. Klon dette repoet ved å skrive `git clone git@github.com:bekk/chatops-for-dummies.git` i terminalen
 
 ## Presentasjon 
 https://docs.google.com/presentation/d/1vQdtBYriDtbgxDAbU45niT5NZ0rP_R4BBFDCq2vD_YU/edit?usp=sharing
