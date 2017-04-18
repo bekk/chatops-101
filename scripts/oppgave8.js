@@ -19,7 +19,7 @@ const bergenYrUrl = '';
 
 module.exports = function (robot) {
   robot.respond(/hva bør jeg ha på meg når jeg går ut/, function (res) {
-      // Hent ut nedbørsmengden (percepitation) i Bergen de neste timene og avgjør utifra det om botten skal anbefale paraply eller ikke 
+      // Hent ut nedbørsmengden (precipitation) i Bergen de neste timene og avgjør utifra det om botten skal anbefale paraply eller ikke 
   });
 };
 
