@@ -5,11 +5,12 @@
 //   hubot hvem leder eliteserien - boten svarer med navnet på laget som topper tabellen
 //   hubot hvordan går det med <lag> - boten svarer med lagets tabellposisjon og antall poeng
 
+const request = require('request');
 const url = "https://api.vglive.no/v1/vg/tournaments/seasons/1439/standings/live";
 
 module.exports = function (robot) {
   robot.respond(/hvem leder eliteserien/i, function (msg) {
-    robot.http(url).get()(function (err, res, body) {
+    request(url, function (error, response, body) {
       // APIet svarer med JSON, som du må tolke til et javascript-objekt før du kan bruke det.
     });
   });
