@@ -6,7 +6,7 @@
   4. Klon dette repoet ved å skrive `git clone git@github.com:bekk/chatops-for-dummies.git` i terminalen
 
 ## Presentasjon 
-https://docs.google.com/presentation/d/1vQdtBYriDtbgxDAbU45niT5NZ0rP_R4BBFDCq2vD_YU/edit?usp=sharing
+https://docs.google.com/presentation/d/1QKE36Du123kjfyHCHfDoHYIQ_A7wN0q_NRTWFGboDbI/edit?usp=sharing
 
 ## Kjøring av hubot
 
