@@ -4,7 +4,7 @@
 // Commands:
 //   hubot hello - boten hilser tilbake
 //   hvem er den beste i skam  - boten svarer
-//
+
 // Hint:
 //   som nevnt i introen så bruker du følgende
 //

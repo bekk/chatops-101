@@ -3,7 +3,7 @@
 //
 // Commands:
 //   hubot hvem har jeg hooket med sist - botten svarer med en tilfeldig SKAM-karakter
-//
+
 //  Hint:
 //   argumentet som funksjonen tar inn "res" har en funksjon random(array) som kalles slik:
 //
