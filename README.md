@@ -35,6 +35,15 @@ For å snakke med huboten i terminalen
     hubot> hubot hei
     
 Kjøre hubotten i Slack
+
+Legg til din gruppes token med følgende kommando for Mac/Linux:
+
+`EXPORT HUBOT_SLACK_TOKEN=<token>`
+
+Bruk følgende for Windows:
+
+`[Environment]::SetEnvironmentVariable("HUBOT_SLACK_TOKEN", "<token>", "Machine")`
+
 Bruk følgende kommando i terminalen 
 
     bin/hubot -a slack
