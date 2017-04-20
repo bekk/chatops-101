@@ -13,6 +13,7 @@ https://docs.google.com/presentation/d/1QKE36Du123kjfyHCHfDoHYIQ_A7wN0q_NRTWFGbo
 
 Pass på at du er inne i chatops-for-dummies-mappa
 
+### Lokalt
 Du kan starte boten lokalt ved å gå inn i et vindu i *terminalen* og kjøre følgende kommando 
 
     sh ./bin/hubot
@@ -34,7 +35,7 @@ For å snakke med huboten i terminalen
   
     hubot> hubot hei
     
-Kjøre hubotten i Slack
+### På Slack
 
 Legg til din gruppes token med følgende kommando for Mac/Linux:
 
