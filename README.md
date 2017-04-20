@@ -4,6 +4,7 @@
   2. Lag deg en bruker på Slack-kanalen __bekk-chatops__ https://bekk-chatops.slack.com/signup. NB: Her må du bruke din uib-epostadresse
   3. Finn frem en passende editor som kan brukes til javascript, vi anbefaler atom
   4. Klon dette repoet ved å skrive `git clone https://github.com/bekk/chatops-for-dummies.git` i terminalen
+  5. Gå inn i __chatops-for-dummies__ og kjør `npm install` i terminalen
 
 ## Presentasjon 
 https://docs.google.com/presentation/d/1QKE36Du123kjfyHCHfDoHYIQ_A7wN0q_NRTWFGboDbI/edit?usp=sharing
