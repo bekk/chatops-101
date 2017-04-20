@@ -49,8 +49,8 @@ Bruk følgende kommando i terminalen
 
     bin/hubot -a slack
     
-  
-    
+For å snakke med botten din i __general__-kanalen på slack, bruk `@botnavn`. Du kan også snakke med botten din direkte via direct messages.
+    
 ## Om Hubot
 
 Hubot er en chatbot bygd på Hubot-rammeverket.
