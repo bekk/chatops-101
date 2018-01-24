@@ -1,5 +1,5 @@
 // Description:
-//   Script for å telle antall dager til sommerferien 
+//   Script for å telle antall dager til sommerferien
 //
 // Commands:
 //   hubot hvor mange dager er det igjen til sommerferien - boten svarer med antall dager
@@ -11,7 +11,7 @@ const moment = require('moment');
 module.exports = function (robot) {
   robot.respond(/hvor mange dager er det igjen til sommerferien/, function (res) {
     const now = moment();
-    const lastExamDate = moment("2017-06-01");
+    const lastExamDate = moment("2018-06-01");
 
     const diff = lastExamDate.diff(now, "days");
 
