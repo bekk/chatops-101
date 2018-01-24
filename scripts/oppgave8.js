@@ -2,7 +2,7 @@
 //   Script for å finne ut hva man bør ha på seg i dag ved å bruke YR sitt api
 //
 // Commands:
-//   hubot hva bør jeg ha på meg når jeg går ut - botten svarer om du bør ha paraply eller ikke 
+//   hubot hva bør jeg ha på meg når jeg går ut - botten svarer om du bør ha paraply eller ikke
 
 // Hint 1
 // YR har et api hvor du kan få værmeldingen i xml-format, her kan du lese mer om dette http://om.yr.no/verdata/xml/
@@ -15,12 +15,10 @@ const request = require('request');
 const xml2json = require('xml2json');
 
 // Kan være greit å finne frem til riktig url først
-const bergenYrUrl = '';
+const trondheimYrUrl = '';
 
 module.exports = function (robot) {
   robot.respond(/hva bør jeg ha på meg når jeg går ut/, function (res) {
-      // Hent ut nedbørsmengden (precipitation) i Bergen de neste timene og avgjør utifra det om botten skal anbefale paraply eller ikke 
+      // Hent ut nedbørsmengden (precipitation) i Trondheim de neste timene og avgjør utifra det om botten skal anbefale paraply eller ikke
   });
 };
-
-
