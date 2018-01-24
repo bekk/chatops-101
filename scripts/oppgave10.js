@@ -6,3 +6,4 @@
 //   hubot neste tbane fra <skolen din>
 
 // Hint: https://reisapi.ruter.no/help
+module.exports = function (robot) {}
