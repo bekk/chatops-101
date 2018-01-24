@@ -1,15 +1,15 @@
 // Description:
-//   Script for å sjekke resultater fra Eliteserien 2017
+//   Script for å sjekke resultater fra Premier League 2017/18
 //
 // Commands:
-//   hubot hvem leder eliteserien
+//   hubot hvem leder premier league
 //   hubot hvordan går det med <lag>
 
 const request = require('request');
-const url = "https://api.vglive.no/v1/vg/tournaments/seasons/1439/standings/live";
+const url = "https://api.vglive.no/v1/vg/tournaments/seasons/1478/standings/live";
 
 module.exports = function (robot) {
-  robot.respond(/hvem leder eliteserien/i, function (msg) {
+  robot.respond(/hvem leder premier league/i, function (msg) {
     request(url, function (error, response, body) {
       if (error) {
         msg.send("Noe gikk galt!", error.message);
@@ -18,7 +18,7 @@ module.exports = function (robot) {
       const data = JSON.parse(body);
       const leaderTeamId = data.standings[0].results[0].participantId;
       const leaderTeam = data.participants.find(team => team.id === leaderTeamId);
-      msg.send(`${leaderTeam.name} leder eliteserien! :soccer:`);
+      msg.send(`${leaderTeam.name} leder Premier League! :soccer:`);
     });
   });
 
@@ -36,7 +36,7 @@ module.exports = function (robot) {
         return;
       }
       const standing = data.standings[0].results.find(standing => standing.participantId === participant.id);
-      msg.send(`${participant.name} er på ${standing.rank}. plass i eliteserien med ${standing.points} poeng :soccer:`);
+      msg.send(`${participant.name} er på ${standing.rank}. plass i Premier League med ${standing.points} poeng :soccer:`);
     })
   })
 }
