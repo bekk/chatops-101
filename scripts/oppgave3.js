@@ -15,7 +15,7 @@ const SKAM_KARAKTERER_JENTER = ["Vilde", "Noora", "Eva", "Chris", "Sana"];
 const SKAM_KARAKTERER = SKAM_KARAKTERER_GUTTER.concat(SKAM_KARAKTERER_JENTER);
 
 module.exports = function (robot) {
-  robot.respond(/hvem av (\w+) har jeg hooket med sist? /, function (res) {
+  robot.respond(/hvem av (\w+) har jeg hooket med sist?/, function (res) {
     const gender = res.match[1];
 
     if (gender == "guttene"){
