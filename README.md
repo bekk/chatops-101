@@ -1,9 +1,9 @@
 ## Forberedelse
 
-  1. Lag deg en bruker på Slack-teamet __ada-hos-bekk__ https://ada-hos-bekk.slack.com/signup. NB: Her må du bruke din stud.ntnu.no-epostadresse
+  1. Lag deg en bruker på Slack-teamet [ada-hos-bekk](https://ada-hos-bekk.slack.com/signup). NB: Her må du bruke din stud.ntnu.no-epostadresse.
   2. Åpne terminalen og skriv følgende:
   ```
-  cd ~c/hatops-for-dummies-master  # går inn i prosjektmappa
+  cd ~/chatops-for-dummies-master  # går inn i prosjektmappa
   npm install  # installerer avhengigheter
   ```
   3. Du er nå klar til å lage chatbot!
