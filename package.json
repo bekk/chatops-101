@@ -2,7 +2,8 @@
   "name": "chatops-for-dummies",
   "version": "0.0.0",
   "scripts": {
-    "start": "./bin/hubot"
+    "start": "./bin/hubot",
+    "lint": "eslint scripts"
   },
   "dependencies": {
     "cheerio": "^0.22.0",
@@ -18,5 +19,8 @@
   },
   "engines": {
     "node": ">=10"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1"
   }
 }

@@ -34,7 +34,7 @@ module.exports = function (robot) {
 // Du trenger å sende inn dagens ukedag som et tall her
 // Hint: Bruk moment for å finne ukedagen
 function hentKantineMatenFraHTML(htmlBody, ukedag = 0) {
-  $ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
+  const $ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
 
   const mat = $('.dishes__container .dishes__week .dishes__dishes'); // henter ut maten
 

@@ -33,7 +33,7 @@ module.exports = function (robot) {
 
 // Funksjon for å hente ut kantinematteksten fra html-koden
 function hentKantineMatenFraHTML(htmlBody) {
-  $ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
+  const $ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
 
   const mat = $('.inner-spisested'); // henter ut maten
   const dagensMat = $(mat).html();
