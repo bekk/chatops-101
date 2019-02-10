@@ -20,8 +20,8 @@ module.exports = function (robot) {
     //code here
   });
 
-  robot.hear(/hvem er den beste i skam/, function (res) {
-    /* Denne hear-funksjonen vil bli kalt hver gang noen sier "hvem er den beste i skam" i en chat hvor
+  robot.hear(/hvem er den beste i parterapi/, function (res) {
+    /* Denne hear-funksjonen vil bli kalt hver gang noen sier "hvem er den beste i parterapi" i en chat hvor
      botten har tilgang */
 
 
