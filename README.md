@@ -18,7 +18,7 @@ Pass på at du er inne i chatops-for-dummies-mappa
 ### Lokalt
 Du kan starte boten lokalt ved å gå inn i et vindu i *terminalen* og kjøre følgende kommando
 
-    sh ./bin/hubot
+    npm start
 
 Hver gang du endrer koden må du restarte scriptet. Det avsluttes med <kbd>ctrl</kbd>+<kbd>C</kbd> og startes igjen som over.
 
@@ -39,17 +39,9 @@ For å snakke med huboten i terminalen
 
 ### På Slack
 
-Legg til din gruppes token med følgende kommando for Mac/Linux:
-
-`export HUBOT_SLACK_TOKEN=<token>`
-
-Bruk følgende for Windows:
-
-`[Environment]::SetEnvironmentVariable("HUBOT_SLACK_TOKEN", "<token>", "Machine")`
-
 Bruk følgende kommando i terminalen
 
-    bin/hubot -a slack
+    npm run slack
 
 For å snakke med botten din i __general__-kanalen på slack, bruk `@botnavn`. Du kan også snakke med botten din direkte via direct messages.
     
