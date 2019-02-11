@@ -9,7 +9,7 @@
 const moment = require('moment');
 
 module.exports = function (robot) {
-  robot.respond(/hubot hvor mange dager er det igjen til å prøve å gjøre noe romantisk/, function (res) {
+  robot.respond(/hvor mange dager er det igjen til å prøve å gjøre noe romantisk/, function (res) {
     //code here
   });
 };
