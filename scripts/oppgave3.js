@@ -5,7 +5,7 @@
 // Commands:
 //   hubot hvem av jentene er drømmepartneren min? - botten svarer et tilfeldig jentenavn
 //   hubot hvem av guttene er drømmepartneren min? - botten svarer et tilfeldig gutteenavn
-//   hubot hvem av ...  har jeg hooket med sist?- botten svarer en tilfeldig person
+//   hubot hvem av ...  er drømmepartneren min?- botten svarer en tilfeldig person
 
 // Hint 1: dersom du lurer på hva som er lagret i en variabel kan du skrive den ut med
 // console.log("tekst", variabel)
