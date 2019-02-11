@@ -1,8 +1,8 @@
 // Description:
-//   Velger en tilfeldig PARTERAPI-karakter fra en liste når du spør "hvem var utro sist"
+//   Velger en tilfeldig parterapi karakter fra en liste når du spør "hvem var utro sist"
 //
 // Commands:
-//   hubot hvem var utro sist - botten svarer med en tilfeldig PARTERAPI-karakter
+//   hubot hvem var utro sist - botten svarer med en tilfeldig parterapi karakter
 //
 //  Hint:
 //   argumentet som funksjonen tar inn "res" har en funksjon random(array) som kalles slik:
