@@ -1,8 +1,8 @@
 // Description:
-//   Velger en tilfeldig parterapi karakter i listen når du spør "hvem var utro med hvem"
+//   Velger en tilfeldig parterapi karakter i listen når du spør "hvem var utro sist"
 //
 // Commands:
-//   hubot hvem var utro med hvem - botten svarer med en tilfeldig parterapi karakter
+//   hubot hvem var utro sist - botten svarer med en tilfeldig parterapi karakter
 
 //  Hint:
 //   argumentet som funksjonen tar inn "res" har en funksjon random(array) som kalles slik:
@@ -15,7 +15,7 @@
 const PARTERAPI_KARAKTERER = ["Navn1", "Navn2"];
 
 module.exports = function (robot) {
-  robot.respond(/hvem var utro med hvem/, function (res) {
+  robot.respond(/hvem var utro sist/, function (res) {
     //code here
   });
 };
