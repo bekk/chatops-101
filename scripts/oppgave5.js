@@ -1,17 +1,17 @@
 // Description:
-//   Script for å summere to tall
+//   Sript for å regne ut et parterapi par sitt felles forbruk
 //
 // Commands:
-//   hubot summer <tall1> + <tall2> - botten summerer tallene
+//   hubot summer forbruket <forbruk1> + <forbruk2> - botten summerer forbrukene
 
 
 module.exports = function (robot) {
-  robot.respond(/summer ([0-9]+) \+ ([0-9]+)/, function (res) {
+  robot.respond(/summer forbrbuket ([0-9]+) \+ ([0-9]+)/, function (res) {
 
-    const tall1 = parseInt(res.match[1]);
-    const tall2 = parseInt(res.match[2]);
+    const forbruk1 = parseInt(res.match[1]);
+    const forbruk2 = parseInt(res.match[2]);
 
-    res.reply(`Summen av ${tall1} + ${tall2} = ${tall1 + tall2}`);
+    res.reply(`Totalforbruket av  ${forbruk1} + ${forbruk2} = ${forbruk1 + forbruk2}`);
 
   });
 };
