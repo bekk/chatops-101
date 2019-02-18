@@ -1,12 +1,20 @@
+## Dette må du ha installert på maskinene
+
+* Git
+* En tekst editor for eksempel Visual Studio Code eller Atom 
+* Terminal(for mac) eller Powershell(for windows) 
+* Node 
+
 ## Forberedelse
 
   1. Lag deg en bruker på Slack-teamet [ada-hos-bekk](https://ada-hos-bekk.slack.com/signup). NB: Her må du bruke din stud.ntnu.no-epostadresse.
-  2. Åpne terminalen og skriv følgende:
+  2. Klon repoet 
+  3. Åpne terminalen og skriv følgende:
   ```
   cd ~/chatops-for-dummies  # går inn i prosjektmappa
   npm install  # installerer avhengigheter
   ```
-  3. Du er nå klar til å lage chatbot!
+  4. Du er nå klar til å lage chatbot!
 
 ## Presentasjon
 https://docs.google.com/presentation/d/1QKE36Du123kjfyHCHfDoHYIQ_A7wN0q_NRTWFGboDbI/edit?usp=sharing
@@ -18,8 +26,14 @@ Pass på at du er inne i chatops-for-dummies-mappa
 ### Lokalt
 Du kan starte boten lokalt ved å gå inn i et vindu i *terminalen* og kjøre følgende kommando
 
-    npm start
+For Mac: 
 
+    npm start
+    
+For Windows: 
+
+    .\bin\hubot
+    
 Hver gang du endrer koden må du restarte scriptet. Det avsluttes med <kbd>ctrl</kbd>+<kbd>C</kbd> og startes igjen som over.
 
 Hvis botten kjører vil du få følgende output i terminalen:
@@ -27,7 +41,7 @@ Hvis botten kjører vil du få følgende output i terminalen:
     [Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
     hubot>
 
-Du kan se hva slags ferdigheter botten her med å kjøre `hubot help` i terminalen.
+Du kan se hva slags ferdigheter botten har med å kjøre `hubot help` i terminalen.
 
     hubot> hubot help
     hubot animate me <query> - The same thing as `image me`, except adds [snip]
@@ -39,9 +53,19 @@ For å snakke med huboten i terminalen
 
 ### På Slack
 
-Bruk følgende kommando i terminalen
+Legg til din gruppes token og kjør i terminalen med følgende kommando 
 
-    npm run slack
+For Mac/Linux:	
+
+ `export HUBOT_SLACK_TOKEN=<token>`	
+ 
+ `npm run slack`
+
+For Windows:	
+
+ `[Environment]::SetEnvironmentVariable("HUBOT_SLACK_TOKEN", "<token>")`
+ 
+ `bin/hubot -a slack`
 
 For å snakke med botten din i __general__-kanalen på slack, bruk `@botnavn`. Du kan også snakke med botten din direkte via direct messages.
     
