@@ -17,7 +17,7 @@
   Bare for windows: 
   ```
   npm install -g node-gyp
-	npm install --global --production windows-build-tools
+  npm install --global --production windows-build-tools
   ```
   For mac/windows:
   ```
