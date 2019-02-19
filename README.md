@@ -1,4 +1,4 @@
-## Dette må du ha installert på maskinene
+## Dette må du ha installert på maskinen
 
 - Git
 - En tekst editor for eksempel Visual Studio Code eller Atom 
