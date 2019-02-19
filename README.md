@@ -1,17 +1,26 @@
 ## Dette må du ha installert på maskinene
 
-* Git
-* En tekst editor for eksempel Visual Studio Code eller Atom 
-* Terminal(for mac) eller Powershell(for windows) 
-* Node 
+- Git
+- En tekst editor for eksempel Visual Studio Code eller Atom 
+- Terminal(for mac) eller Powershell(for windows) 
+- Node 
 
 ## Forberedelse
 
-  1. Lag deg en bruker på Slack-teamet [ada-hos-bekk](https://ada-hos-bekk.slack.com/signup). NB: Her må du bruke din stud.ntnu.no-epostadresse.
+  1. Lag deg en bruker på Slack-teamet [bekk-hos-uib](https://bekk-hos-uib.slack.com/signup). NB: Her må du bruke din student.uib.no-epostadresse.
   2. Klon repoet 
   3. Åpne terminalen og skriv følgende:
   ```
   cd ~/chatops-for-dummies  # går inn i prosjektmappa
+  
+  ```
+  Bare for windows: 
+  ```
+  npm install -g node-gyp
+	npm install --global --production windows-build-tools
+  ```
+  For mac/windows:
+  ```
   npm install  # installerer avhengigheter
   ```
   4. Du er nå klar til å lage chatbot!
