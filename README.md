@@ -11,7 +11,7 @@
   2. Klon repoet 
   3. Åpne terminalen og skriv følgende:
   ```
-  cd ~/chatops-for-dummies  # går inn i prosjektmappa
+  cd ~/chatops-101  # går inn i prosjektmappa
   
   ```
   Bare for windows: 
@@ -30,7 +30,7 @@ https://docs.google.com/presentation/d/1QKE36Du123kjfyHCHfDoHYIQ_A7wN0q_NRTWFGbo
 
 ## Kjøring av hubot
 
-Pass på at du er inne i chatops-for-dummies-mappa
+Pass på at du er inne i chatops-101-mappa
 
 ### Lokalt
 Du kan starte boten lokalt ved å gå inn i et vindu i *terminalen* og kjøre følgende kommando
