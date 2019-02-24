@@ -14,7 +14,7 @@ const kantineURL = 'https://www.sammen.no/no/bergen/mat/';
 
 module.exports = function (robot) {
   robot.respond(/hva er dagens middag på (\w+)/, function (res) {
-    const kantine = res.match[1];
+    const kantine = res.match[1].toLowerCase();
     const url = kantineURL + kantine;
 
     //hent websiden med kantineinfoen
@@ -37,8 +37,18 @@ module.exports = function (robot) {
 function hentKantineMatenFraHTML(htmlBody, ukedag = 0) {
 
   const $ = cheerio.load(htmlBody); //hjelpebiblotek for å enklere lese html-siden
-  const dagensMat = $('#weekmenu h3+p').eq(ukedag).text(); // henter ut maten
+  const ukemeny = $('#weekmenu').text()
+    .split(/Mandag|Tirsdag|Onsdag|Torsdag|Fredag/) // skiller dagene fra hverandre
+    .filter(dag => dag); // fjerner tomme listeelementer
 
-  return dagensMat;
+  const dagensMat = ukemeny[ukedag];
+  return ryddOppKantineMatTeksten(dagensMat);
 }
 
+function ryddOppKantineMatTeksten(tekst) {
+  //regex magi
+  return tekst
+    .replace(/ +(?= )/g, '') // fjerner doble mellomrom: "hei  du der"=> "hei du der"
+    .replace(/^\s*[\r\n]/gm, "\n") // erstatter blanke linjer med rene linjeskift
+    .replace(/^ +/gm, '').trim(); // fjerner whitespace fra starten av hver linje
+}
