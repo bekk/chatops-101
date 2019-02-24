@@ -1,5 +1,5 @@
 {
-  "name": "chatops-for-dummies",
+  "name": "chatops-101",
   "version": "0.0.0",
   "scripts": {
     "start": "./bin/hubot",
