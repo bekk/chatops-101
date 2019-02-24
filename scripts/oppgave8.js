@@ -15,10 +15,10 @@ const request = require('request');
 const xml2json = require('xml2json');
 
 // Kan være greit å finne frem til riktig url først
-const trondheimYrUrl = '';
+const bergenYrUrl = '';
 
 module.exports = function (robot) {
   robot.respond(/hva bør jeg ha på meg når jeg går ut/, function (res) {
-      // Hent ut nedbørsmengden (precipitation) i Trondheim de neste timene og avgjør utifra det om botten skal anbefale paraply eller ikke
+      // Hent ut nedbørsmengden (precipitation) i Bergen de neste timene og avgjør utifra det om botten skal anbefale paraply eller ikke
   });
 };
