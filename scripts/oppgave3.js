@@ -13,7 +13,7 @@
 
 module.exports = function (robot) {
   robot.respond(/hvem av (.*) er drømmepartneren min/, function (res) {
-    // res.match[1] -- henter ut ordet på plassen til (\w+) i det du skrev til botten. (\w+) er en regexp
+    // res.match[1] -- henter ut ordet på plassen til (.*) i det du skrev til botten. (.*) er en regexp
 
     // code here
 
