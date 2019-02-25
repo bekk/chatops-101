@@ -9,6 +9,7 @@
 
 // Hint 2: Her må du bruke et JavaScript object
 
-// Hint 3: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+// Hint 3: https://johhorn.gitbooks.io/web-intro/05-javascript/02-typer.html
+// Eventuelt: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 
 module.exports = function (robot) {}

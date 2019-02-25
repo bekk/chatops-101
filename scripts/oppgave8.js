@@ -5,7 +5,7 @@
 //   hubot hva bør jeg ha på meg når jeg går ut - botten svarer om du bør ha paraply eller ikke
 
 // Hint 1
-// YR har et api hvor du kan få værmeldingen i xml-format, her kan du lese mer om dette http://om.yr.no/verdata/xml/
+// YR har et api hvor du kan få værmeldingen i xml-format, her kan du lese mer om dette https://hjelp.yr.no/hc/no/articles/360009342833
 // Vi skal bruke www.yr.no/sted/[lokasjon her]/varsel.xml
 
 // Vi har importert noen javascript-biblioteker som kan være nyttige:
