@@ -6,7 +6,7 @@
 //   hubot hvordan går det med <lag> - boten svarer med lagets tabellposisjon og antall poeng
 
 const request = require('request');
-const url = "https://api.vglive.no/v1/vg/tournaments/seasons/1478/standings/live";
+const url = "https://vglive.no/api/vg/tournaments/seasons/1776/standings?type=live-changes";
 
 module.exports = function (robot) {
   robot.respond(/hvem leder premier league/i, function (msg) {
