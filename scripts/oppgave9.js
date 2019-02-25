@@ -1,5 +1,5 @@
 // Description:
-//   Script for å sjekke resultater fra Premier League 2017/18
+//   Script for å sjekke resultater fra Premier League 2018/19
 //
 // Commands:
 //   hubot hvem leder premier league - boten svarer med navnet på laget som topper tabellen
